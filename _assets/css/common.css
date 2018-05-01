@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #272727;
+}
+.main {
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  line-height: 30;
+  font-size: 30px;
+}
