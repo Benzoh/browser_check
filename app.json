@@ -2,6 +2,7 @@
   "name": "browser_check",
   "description": "",
   "scripts": {
+    "start": "node server.js"
   },
   "env": {
   },
