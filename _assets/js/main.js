@@ -5,13 +5,25 @@ $(function(){
 
   // TODO: ブラウザの通知を送れるようにする
 
+  Push.create('Hello World!');
+
   function push() {
-    console.log("push!");
-    Push.create('Hello World!')
+    Push.create("Browser Check!!", {
+      body: "各ブラウザでの動作確認を怠っていませんか？？",
+      timeout: 10000,
+      onClick: function () {
+          window.focus();
+          this.close();
+      }
+    });
   }
 
+  // setInterval(function() {
+  //   alert("Browser Check!!");
+  // }, 3000000);
+
   setInterval(function() {
-    alert("Browser Check!!");
+    push();
   }, 3000000);
 
   // 3000 3秒
